@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My 1ST HTML</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav class="menu">
+            <ul>
+                <li><a href="#index"><img class="icon" src="home.png">HOME</a></li>
+                <li><a href="#about"><img class="icon" src="about.png">ABOUT</a></li>
+                <li><a href="#services"><img class="icon" src="services.png">SERVICES</a></li>
+                <li><a href="#contact"><img class="icon" src="contacts.png">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner" id="home">
+            <div class="slogan"> "Innovate. Integrate. Elevate."
+            </div>
+        </div>
+
+        <section id="about">
+            <div class="content">
+                <div class="text">
+                    <h2> AlphaCore Intelligence </h2>
+                    <p> We stand at the forefront of artificial intelligence innovation, driven by a mission to revolutionize how businesses and individuals interact with technology. With a team of visionary engineers, data scientists, and AI experts, we blend cutting-edge algorithms with intuitive design, ensuring our technologies are as accessible as they are powerful.</p>
+                </div>
+                <img src="gif5.gif" alt="About Image">
+            </div>
+            <button class="btn"> Read More</button>
+        </section>
+
+        <section id="image-gallery">
+            <div class="image-item">
+                <div class="mission">
+                    <h3>Mission</h3>
+                    <img src="gif8.gif" alt="Image 1">
+                </div>
+            </div>
+            <div class="image-item">
+                <div class="vision">
+                    <h3>Vision</h3>
+                    <img src="gif6.gif" alt="Image 2">
+                </div>
+            </div>
+            <div class="image-item">
+                <div class="feedback" data-email="gemdulduco13@gmail.com">
+                    <h3>Feedback</h3>
+                    <img src="gif9.gif" alt="Image 3">
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-container">
+
+                <div class="service-item">
+                    <img src="gif10.gif" alt="Service 1">
+                    <h3>Intelligent Process Automation</h3>
+                    <p>Streamline business operations by integrating AI-driven automation for data processing, workflow management, and repetitive tasks.</p>
+                </div>
+
+                <div class="service-item">
+                    <img src="gif4.gif" alt="Service 2">
+                    <h3>Advanced Robotics & Automation</h3>
+                    <p>Leverage AI-powered robotics for industrial automation, logistics, and smart manufacturing.</p>
+                </div>
+
+                <div class="service-item">
+                    <img src="gif3.gif" alt="Service 3">
+                    <h3>AI-Driven Cybersecurity</h3>
+                    <p>Protect your digital assets with real-time threat detection and adaptive security measures powered by AI.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="content">
+            <section id="contact">
+                <h3>Contact Us</h3>
+                <div class="container">
+                    <div class="left-column">
+                        <h2>Contact Us</h2>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="right-column">
+                        <h2>Our Location</h2>
+                        <img src="maps.jpg" alt="Location Map" usemap="#image-map">
+                        <map name="image-map">
+                            <area target="_blank" alt="Office" title="Office" href="https://www.google.com/maps/place/BMCC+Tarpaulin+Printing/@9.7862292,125.4961026,196m/data=!3m1!1e3!4m6!3m5!1s0x330136bec2e4b3d9:0x8ed6a2a47fe0ec19!8m2!3d9.7861182!4d125.4958537!16s%2Fg%2F1hdzd8hvv?authuser=0&entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D" coords="306,246,711,589" shape="rect">
+                            <area target="_blank" alt="Branch" title="Branch" href="https://www.google.com/maps/place/CHRIST+FAITH+FELLOWSHIP+-+SURIGAO/@9.7865409,125.4955429,143m/data=!3m1!1e3!4m6!3m5!1s0x330137002450e9e9:0xb836950ef178dd7d!8m2!3d9.7863978!4d125.4956366!16s%2Fg%2F11vjtf6rjh?authuser=0&entry=ttu&g_ep=EgoyMDI1MDMwNC4wIKXMDSoASAFQAw%3D%3D" coords="163,166,140" shape="circle">
+                        </map>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 AlphaCore Intelligence. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

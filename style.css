@@ -1,0 +1,482 @@
+body, ul {  
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #1B1F23;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    background-color: #1B1F23;
+    padding: 18px;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.menu ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    position: relative;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s;
+    display: inline-block;
+}
+
+.menu ul li a:hover {
+    color: #20C997;
+    transform: translateY(-5px);
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    bottom: 3px;
+    left: 0px;
+    width: 0px;
+    background-color:#20C997;
+    transition: width 0.5s ease;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+}
+
+header {
+    color: white;
+    background-color: #23272B;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+    padding-right: 5px;
+}
+
+#about .content .text {
+    flex: 1;
+    margin-left: 90px;
+    font-size: 18px;
+    padding-left: 10px;
+    text-align: justify;
+    margin-right: 50px;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    position: relative;
+}
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+}
+
+#about {
+    padding: 50px 20px;
+    background-color:#1B1F23;
+}
+
+#about h2 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    margin-top: -80px;
+}
+
+#about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about .content .text {
+    text-align: justify;
+    color: white;
+    flex: 1;
+    margin-left: 90px;
+    font-size: 22px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#about .content img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 30px;
+    margin-right: 90px;
+}
+
+button.btn {
+    background-color: #0D6EFD;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: -70px;
+    margin-left: 90px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #20C997;
+    transform: translateY(-5px);
+}
+
+button.btn:focus {
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#contact {
+    color: white;
+    font-size: 20px;
+    padding: 50px 20px;
+    background-color: #23272B;
+    text-align: center;
+    font-weight: bold;
+}
+
+#image-gallery {
+    background-color: #23272B;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 #20C997;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-item h3 {
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-item:hover img {
+    transform: scale(1.1);  
+}
+
+/* Mission */
+.mission {
+    position: relative;
+}
+
+.mission:hover::after {
+    content: " We revolutionize industries with cutting-edge AI solutions for smarter automation and data-driven success.";
+    display: block;
+    color: #20C997;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+}
+
+/* Vision */
+.vision {
+    position: relative;
+}
+
+.vision:hover::after {
+    content: "We lead the future of AI with innovative, ethical, and human-centric intelligence.";
+    display: block;
+    color: #20C997;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+}
+
+/* Feedback */
+.feedback {
+    position: relative;
+}
+
+.feedback .hover-content {
+    display: none;
+    color: #20C997;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+}
+
+.feedback:hover .hover-content {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#services {
+    padding: 50px 20px;
+    background-color: #23272B;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #1B1F23;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 #20C997;
+    width: 30%;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    color: white;
+}
+
+.service-item img {
+    width: 60%;
+    height: 45%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.service-item h3 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    text-align: justify;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 1024px) {
+    .service-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #services h2 {
+        font-size: 28px;
+    }
+}
+
+#contact {
+    padding: 50px 20px;
+    background-color: #23272B;
+    border-radius: 20px;
+}
+
+#contact h3 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-column,
+.right-column {
+    width: 48%;
+}
+
+.left-column {
+    background-color: #1B1F23;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 #20C997;
+}
+
+.right-column {
+    background-color: #1B1F23;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 #20C997;
+}
+  
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #a7acb1;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(118, 111, 111);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #0D6EFD;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #20C997;
+    transform: translateY(-5px);
+}
+
+.right-column img {
+    width: 580px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-column:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: black;
+    color: #6C757D;
+    text-align: center;
+    text-align: bottom;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
