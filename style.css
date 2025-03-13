@@ -31,7 +31,7 @@ body {
     padding: 5px;
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     transition: transform 0.3s ease, color 0.3s;
     display: inline-block;
 }
@@ -108,6 +108,7 @@ header {
 }
 
 #about h2 {
+    color: white;
     padding-bottom: 20px;
     font-size: 30px;
     margin-top: -80px;
@@ -132,8 +133,8 @@ header {
 
 #about .content img {
     width: 100%;
-    max-width: 500px;
-    height: auto;
+    max-width: 450px;
+    height: 100%;
     border-radius: 30px;
     margin-right: 90px;
 }
@@ -285,18 +286,6 @@ html {
     display: block;
 }
 
-@media (max-width: 768px) {
-    #image-gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-item {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -304,7 +293,7 @@ html {
 }
 
 #services {
-    padding: 50px 20px;
+    padding: 100px 20px;
     background-color: #23272B;
     text-align: center;
 }
@@ -341,13 +330,13 @@ html {
     margin-bottom: 20px;
 }
 .service-item h3 {
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     margin-bottom: 10px;
 }
 
 .service-item p {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.5;
     color: white;
     text-align: justify;
@@ -355,23 +344,6 @@ html {
 
 .service-item:hover {
     transform: translateY(-10px);
-}
-
-@media (max-width: 1024px) {
-    .service-item {
-        width: 45%;
-    }
-}
-
-@media (max-width: 768px) {
-    .service-item {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    #services h2 {
-        font-size: 28px;
-    }
 }
 
 #contact {
@@ -388,7 +360,7 @@ html {
 }
 
 #contact h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
@@ -439,7 +411,9 @@ textarea {
 }
 
 textarea {
+    font-size: 14px;
     resize: vertical;
+    font-weight: bold;
 }
 
 button {
@@ -459,8 +433,8 @@ button:hover {
 }
 
 .right-column img {
-    width: 580px;
-    height: 350px;
+    width: 90%;
+    height: 80%;
     object-fit: cover;
     border-radius: 8px;
     transition: transform 0.5s ease-in-out;
@@ -479,4 +453,52 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    /* About Us Section */
+    #about .content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    #about .content .text {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    #about .content img {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    /* Services Section */
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Contact Section */
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .right-column img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 }
