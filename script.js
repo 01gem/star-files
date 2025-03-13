@@ -4,9 +4,9 @@ function menuClick(menuItem) {
 
 const banner = document.querySelector('.banner');
 const images = [
-    'url("C:/Users/gemdu/Downloads/IPT101 ACTIVITY/slogan/slogan1.gif")',
-    'url("C:/Users/gemdu/Downloads/IPT101 ACTIVITY/slogan/slogan2.gif")',
-    'url("C:/Users/gemdu/Downloads/IPT101 ACTIVITY/slogan/slogan3.gif")'
+    'url("slogan/slogan1.gif")',
+    'url("slogan/slogan2.gif")',
+    'url("slogan/slogan3.gif")'
 ];
 let index = 0;
 
