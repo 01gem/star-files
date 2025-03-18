@@ -1,6 +1,6 @@
 # 📚 IT Student School Activities Repository
 
-Welcome to my **School Activities Repository**! This repository contains various projects, exercises, and assignments I have worked on as an IT student. Everything here is a **work in progress**, so expect **imperfect code** as I continue to learn and improve.
+Welcome to my **Star Files Repository**! This repository contains various projects, exercises, and assignments I have worked on as an IT student. Everything here is a **work in progress**, so expect **imperfect code** as I continue to learn and improve.
 
 ## 📌 About This Repository
 - This repository serves as a collection of my **school-related IT activities**.
