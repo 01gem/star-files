@@ -1,0 +1,79 @@
+body {
+  background-image: url('../images/bg1.jpg');
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-container {
+  background: #fff;
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.register-container h2 {
+  margin-bottom: 24px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 92%;
+  padding: 14px 20px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  font-size: 14px;
+  outline: none;
+}
+
+button[type="submit"] {
+  background: #007bff;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+hr {
+  margin: 24px 0;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.login-link {
+  font-size: 15px;
+  color: #007bff;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
